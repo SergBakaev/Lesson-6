@@ -1,0 +1,27 @@
+public class Cat extends Animal {
+   private String noSwin;
+    public Cat(String name, int run, int swin, String noSwin) {
+        super(name, run, swin);
+        this.noSwin = noSwin;
+    }
+    public String getNoSwin(){
+        return noSwin;
+    }
+
+    @Override
+    void swin(int _swin) {
+        if (_swin <= 0) {
+            System.out.println("Кот не умеет плавать!!!");
+
+        }
+    }
+
+    @Override
+    void run(int _run) {
+        if (_run <= 200) {
+            System.out.println(name + " пробежал " + _run + " м.");
+        } else
+            System.out.println("Кот устал, он бежит только 200 м.");
+
+    }
+    }

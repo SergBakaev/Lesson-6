@@ -1,0 +1,19 @@
+public class Main {
+    public static void main(String[] args) {
+        Cat cat = new Cat("Barsik", 200, 0, "Кот не плавает");
+        System.out.println("Имя кота " + cat.getName() + ". Бежит " + cat.getRun() + " " + cat.getNoSwin());
+
+        Dog dog = new Dog("Chip", 500, 10);
+        System.out.println("Имя собаки " + dog.getName() + ". Бежит " + dog.getRun() + " м. Плывет " + dog.getSwin() + " м." );
+
+        cat.run(200);  // Даем команда коту бежать 200 м.
+        cat.swin(0);   // Даем команду коту плыть 10 м.
+        dog.run(500);  // Даем команду сабаке бежать 500 м.
+        dog.swin(10);  // Даем команду сабаке плыть 10 м.
+        cat.run(250);  // Даем команду коту бежать 250 м.
+        dog.run(600);  // Даем команду сабаке бежать 600 м.
+        dog.swin(20);  // Даем команду сабаке плыть 20 м.
+
+
+    }
+}

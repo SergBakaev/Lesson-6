@@ -1,0 +1,21 @@
+public class Dog extends Animal{
+    public Dog(String name, int run, int swin){
+        super(name, run , swin);
+    }
+
+    @Override
+    void swin(int _swin) {
+        if ( _swin<=10){
+            System.out.println(name + " проплыл " + _swin + " м.");
+        }else
+            System.out.println("Сабака устала , она плывёт только 10 м.");
+    }
+
+    @Override
+    void run(int _run) {
+        if(_run <=500){
+            System.out.println(name + " пробежал " +  _run + " м.");
+        }else
+            System.out.println("Сабака устала, она бежит только 500 м.");
+    }
+}
